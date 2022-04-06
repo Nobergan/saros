@@ -1,33 +1,70 @@
-.third__img {
-    width: 100%;
-}
+.third {
+    @include for-size(tablet) {
+        padding: 142px 0 136px;
 
-.third .container {
-    padding: 32px 15px 60px;
+        background-image: url('../../img/third/third-bg-desk.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-    background: #000000;
-}
+    &__img {
+        width: 100%;
 
-.third__text {
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
+        @include for-size(tablet) {
+            display: none;
+        }
+    }
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
+    & .container {
+        margin-top: -1px;
+        padding: 32px 15px 60px;
 
-    color: #FFFFFF;
-}
+        background: #000000;
 
-.third__text:first-child {
-    margin: 0 auto 25px;
-}
+        @include for-size(tablet) {
+            padding: 0 15px;
+            background: unset;
+        }
+    }
 
-.third__text:last-child {
-    margin: 0 auto;
-}
+    &__text {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
 
-.third__text--part {
-    font-weight: 700;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+
+        color: #FFFFFF;
+
+        @include for-size(tablet) {
+            margin: 0;
+
+            font-weight: 700;
+            font-size: 20px;
+
+            color: #FFFFFF;
+        }
+    }
+
+    &__text:first-child {
+        margin: 0 auto 25px;
+
+        @include for-size(tablet) {
+            margin: 0 0 32px;
+        }
+    }
+
+    &__text:last-child {
+        margin: 0 auto;
+
+        @include for-size(tablet) {
+            margin: 0;
+        }
+    }
+
+    &__text--part {
+        font-weight: 700;
+    }
 }
