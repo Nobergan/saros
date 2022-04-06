@@ -1,0 +1,33 @@
+.fourth {
+    padding: 60px 0;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 35px;
+}
+
+.fourth__slide-img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    color: #ffffff;
+}
+
+.fourth__text {
+    max-width: 450px;
+    margin: 0 auto;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    
+    color: #000000;
+}

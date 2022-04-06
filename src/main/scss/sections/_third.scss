@@ -1,0 +1,33 @@
+.third__img {
+    width: 100%;
+}
+
+.third .container {
+    padding: 32px 15px 60px;
+
+    background: #000000;
+}
+
+.third__text {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: #FFFFFF;
+}
+
+.third__text:first-child {
+    margin: 0 auto 25px;
+}
+
+.third__text:last-child {
+    margin: 0 auto;
+}
+
+.third__text--part {
+    font-weight: 700;
+}
